@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+:root {
+    --title-color: #232d39;
+    --color-cat-title: #212529;
+    --color-title: #d49c9388;
+    --shadow-color: #b4bbbeb9;
+    --jobcontent-color: #6b707043;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #444e58;
+    font-family: 'Poppins', sans-serif;
+}
+
+.row-jobs {
+    grid-column: 2;
+    grid-row: 1;
+    padding: 40px;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+.row-jobs .job-content {
+    background: var(--jobcontent-color);
+    padding: 20px;
+}
+
+.job-content .col-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    gap: 25px;
+}
+
+.job-content .col-items .job-item {
+    background: #8d8d8c86;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
+    box-shadow: 4px 5px 8px #212529;
+}
+
+.job-item .jopb-description a h4 {
+    cursor: pointer;
+    color: #272729e5;
+    font-size: 15px;
+}
+
+.job-item .fa {
+    color: #0f333b;
+    width: 100%;
+    padding: 14px;
+    font-size: 140px;
+}
+
+.job-item .fa .fa-hospital-o {
+    width: 330px;
+}
