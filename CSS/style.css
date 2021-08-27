@@ -4,6 +4,7 @@
     --color-cat-title: #212529;
     --color-title: #d49c9388;
     --shadow-color: #f2f2f2d7;
+    --main-color: #03093a;
 }
 
 * {
@@ -14,13 +15,14 @@
 
 body {
     margin: 0;
+    background: var(--main-color);
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
 .container-sub-head {
-    background: #7d848b;
+    background: var(--main-color);
     position: sticky;
     top: 0;
 }
@@ -65,12 +67,12 @@ body {
 }
 
 .row-cat form {
-    background-color: red;
+    /* background-color: red; */
     padding: 10px;
 }
 
 .row-cat form .container-items-aside {
-    background: #fcfcfc;
+    /* background: var(--main-color); */
     padding-top: 10px;
     padding-bottom: 10px;
 }

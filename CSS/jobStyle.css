@@ -5,6 +5,7 @@
     --color-title: #d49c9388;
     --shadow-color: #b4bbbeb9;
     --jobcontent-color: #6b707043;
+    --main-color: #03093a;
 }
 
 ul {
@@ -29,15 +30,15 @@ img {
 }
 
 .row-jobs .job-content {
-    background: var(--jobcontent-color);
-    padding: 20px;
+    /* background: var(--main-color); */
+    padding: 15px;
 }
 
 .job-content .col-items {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: minmax(100px, auto);
-    gap: 25px;
+    gap: 15px;
 }
 
 .job-content .col-items .job-item {
@@ -47,7 +48,7 @@ img {
     justify-content: center;
     align-items: center;
     padding: 7px;
-    box-shadow: 4px 5px 8px #212529;
+    box-shadow: 4px 5px 8px #3c4f55e5;
 }
 
 .job-item .jopb-description a h4 {
