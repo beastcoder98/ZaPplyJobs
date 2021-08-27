@@ -1,13 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
-:root {
-    --title-color: #232d39;
-    --color-cat-title: #212529;
-    --color-title: #d49c9388;
-    --shadow-color: #b4bbbeb9;
-    --jobcontent-color: #6b707043;
-    --main-color: #03093a;
-}
-
+@import url("variables.css");
 ul {
     list-style-type: none;
 }
