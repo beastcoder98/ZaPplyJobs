@@ -8,9 +8,19 @@
 
 body {
     margin: 0;
-    background: var(--main-color);
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background: #e4e6e4;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #e2e2e2;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -18,6 +28,7 @@ body {
     background: var(--main-color);
     position: sticky;
     top: 0;
+    left: 0;
 }
 
 .container-sub-head .container {
@@ -26,7 +37,7 @@ body {
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    padding: 80px;
+    padding: 50px;
     flex-wrap: wrap;
 }
 
@@ -38,7 +49,7 @@ body {
 }
 
 .container-sub-head .container h1 span {
-    color: #254346da;
+    color: #254346e5;
 }
 
 .container-sub-head .container h3 {
@@ -47,37 +58,53 @@ body {
     color: #fcfcfc;
 }
 
-.main-container {
+.main-container .row-jobs {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.row-jobs .job-content {
     display: grid;
-    grid-template-columns: 19% auto;
-    gap: 2px;
-    grid-auto-rows: minmax(100px, auto);
+    gap: 20px;
+    grid-template-columns: repeat(4, 250px);
+    grid-template-rows: repeat(auto, 220px);
+    justify-content: center;
+    /* align-content: center; */
+    text-align: center;
 }
 
-.row-cat {
-    grid-column: 1;
-    grid-row: 1;
-}
-
-.row-cat form {
-    /* background-color: red; */
-    padding: 10px;
-}
-
-.row-cat form .container-items-aside {
-    /* background: var(--main-color); */
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.container-items-aside .item {
+.job-content .job-item {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin: 10px 0 0 10px;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    cursor: pointer;
+    box-shadow: 3px 6px 7px 0px #0000004d;
 }
 
-.container-items-aside .item h5 {
-    font-size: 18px;
-    margin-bottom: 5px;
+.job-content .job-item:hover {
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    box-shadow: 3px 3px 7px #00000033;
+    cursor: pointer;
+}
+
+.job-item .jopb-description p {
+    text-align: center;
+    margin: 3px;
+}
+
+.job-item .jopb-description a h4 {
+    cursor: pointer;
+    color: #141414e5;
+    font-size: 15px;
+}
+
+.job-item .fa {
+    color: #304141;
+    width: 100%;
+    padding: 10px;
+    font-size: 120px;
 }

@@ -1,0 +1,65 @@
+.row-box {
+    height: auto;
+    width: 100%;
+}
+
+.boxcontainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: .75rem;
+    padding: 18px 20px;
+}
+
+.boxtitle {
+    font-size: 23px;
+    color: #0e0e0e;
+    font-weight: 400;
+    margin-top: .15rem;
+    transition: .2s;
+}
+
+.boxheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #525050ab;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.boxdescription {
+    padding: 0 1.25rem 1.25rem 3rem;
+    font-size: var(--smaller-font-size);
+}
+
+.boxicon {
+    font-size: 1.5rem;
+    height: max-content;
+    color: var(--title-color);
+    transition: .3s;
+}
+
+.boxitem {
+    box-shadow: 0 12px 32px #6361618a;
+    background-color: #f0faff;
+    border-radius: .25rem;
+    position: relative;
+    transition: all .25s ease;
+}
+
+.boxcontent {
+    overflow: hidden;
+    height: 0;
+    transition: all .25s ease;
+}
+
+
+/*Rotate icon and add font weight to titles*/
+
+.accordion-open .boxicon {
+    transform: rotate(45deg);
+}
+
+.accordion-open .boxtitle {
+    font-weight: 600;
+}
